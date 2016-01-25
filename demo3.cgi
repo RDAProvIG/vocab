@@ -74,7 +74,7 @@ def graph2html1(mygraph):
     mylist += DescriptionTerm(TextNode("Definition"))
     mylist += Ddescription(mydef)
 
-    for (label,prop) in [("Broader",skos.broader), ("Narrower",skos.narrower), ("Related", skos.related)]:
+    for (label,prop) in [("Broader",skos.broader), ("Narrower",skos.narrower), ("Related", skos.related), ("Editorial page",skos.editorialNote)]:
        if (concept, prop, None) in mygraph:
            mylist += DescriptionTerm(TextNode(label))
            ulist = UnorderedList()
