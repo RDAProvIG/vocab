@@ -29,45 +29,6 @@ provig:dataConcepts a skos:ConceptScheme ;
   dcterms:contributor "David Dubin" ;
   dc:date "2014-05-11"^^xsd:date . 
 
-provig:dcMay112014Definition a sam:Declaration ;
-  event:place <http://sws.geonames.org/4887158/>;
-  event:time _:duringMay11 ;
-  event:agent <http://purl.org/RDA-Provenance/Group/> ;
-  sam:hasSubstance _:May11DefsContent ;
-  skos:note "The definition of 9 SKOS concepts sometime on May 11, 2014"@en .
-
-_:duringMay11 a tl:Interval;
-   tl:during _:May112014 .
-
-_:May112014 a tl:Interval ;
-  tl:at "2014-05-11T00:00:00-5:00"^^xsd:dateTime ;
-  tl:duration "PT24H"^^xsd:duration .
-
-_:May11DefsContent a sam:Conjunction ;
-  skos:note "Nine SKOS concept definitions from May 11, 2014"@en .
-
-_:p4M6pm a tl:Interval ;
-  tl:at "2014-09-22T18:00:00+2:00"^^xsd:dateTime;
-  tl:duration "PT1H"^^xsd:duration .
-
-provig:dcSeptember22RDFversion a sam:Assertion ;
-  event:time _:p4M6pm ;
-  event:agent <http://people.lis.illinois.edu/~ddubin/> ;
-  event:place <http://sws.geonames.org/6951763/>;
-  sam:hasSubstance _:May11DefsContent ;
-  sam:hasInterpretiveContext <http://www.w3.org/TR/1999/REC-rdf-syntax-19990222> ;
-  sam:hasPrimaryExpression provig:dataConcepts ;
-  sam:warrantedBy provig:dcMay112014Definition ;
-  sam:encodedVia provig:dcSeptember22n3 ;
-  skos:note "N3 serialization updated September 22, 2014"@en .
-
-provig:dcSeptember22n3 a sam:Indication ;
-  event:time _:p4M6pm ;
-  event:agent <http://people.lis.illinois.edu/~ddubin/> ;
-  event:place <http://sws.geonames.org/6951763/>;
-  sam:hasInterpretiveContext <http://www.w3.org/TeamSubmission/n3/> ;
-  sam:hasPrimaryExpression <http://cirssweb.lis.illinois.edu/DataCon/glos2.ttl> ;
-  sam:encodes provig:dcSeptember22RDFversion.
 
 provig:identity a skos:Concept ;
   skos:prefLabel "identity"@en ;
