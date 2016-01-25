@@ -20,6 +20,7 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix sam: <http://cirssweb.lis.illinois.edu/DataCon/SAM/> .
 
+
 <http://purl.org/RDA-Provenance/Group/>  a org:OrganizationalUnit, foaf:Agent ;
   skos:prefLabel "Research Data Alliance, Research Data Provenance Interest Group"@en .
 provig:dcMay112014Definition a sam:Declaration ;

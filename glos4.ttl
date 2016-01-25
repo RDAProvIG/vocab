@@ -19,6 +19,7 @@
 @prefix mime:    <http://purl.org/NET/mediatypes/> . 
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix sam: <http://cirssweb.lis.illinois.edu/DataCon/SAM/> .
+@prefix wiki:    <https://github.com/RDAProvIG/vocab/wiki/> .
 
 <http://purl.org/RDA-Provenance/Group/>  a org:OrganizationalUnit, foaf:Agent ;
   skos:prefLabel "Research Data Alliance, Research Data Provenance Interest Group"@en .
@@ -32,6 +33,7 @@ provig:dataConcepts a skos:ConceptScheme ;
 
 provig:identity a skos:Concept ;
   skos:prefLabel "identity"@en ;
+  skos:editorialNote wiki:identity ;
   skos:inScheme provig:dataConcepts ;
   skos:narrower provig:dbDataProvenance ;
   skos:definition [
@@ -46,6 +48,7 @@ Identity; p. 63.)."""@en ;
 
 provig:provenance a skos:Concept ;
   skos:prefLabel "provenance"@en ;
+  skos:editorialNote wiki:provenance ;
   skos:inScheme provig:dataConcepts ;
   skos:related provig:provenancePrinciple ;
   skos:narrower provig:experimentalProvenance ;
@@ -59,6 +62,7 @@ ed. Vol 12. Oxford, UK: Oxford University Press; 1989.)."""@en ;
 
 provig:provenancePrinciple a skos:Concept ;
   skos:prefLabel "provenance principle"@en ;
+  skos:editorialNote wiki:provenancePrinciple ;
   skos:inScheme provig:dataConcepts ;
   skos:related provig:provenance ;
   skos:definition [
@@ -74,6 +78,7 @@ Archives Trust Fund Board; 1984. p. 151.)."""@en ;
 
 provig:dbDataProvenance a skos:Concept ;
   skos:prefLabel "data provenance (DBMS sense)"@en ;
+  skos:editorialNote wiki:dbDataProvenance ;
   skos:broader provig:provenance ;
   skos:inScheme provig:dataConcepts ;
   skos:definition [
@@ -90,6 +95,7 @@ computer science volume 1974. Berlin: Springer;
 
 provig:workflow a skos:Concept ;
   skos:prefLabel "workflow"@en ;
+  skos:editorialNote wiki:workflow ;
   skos:inScheme provig:dataConcepts ;
   skos:narrower provig:scientificWorkflow ;
   skos:related provig:workflowManagementSystem ;
@@ -104,6 +110,7 @@ editor. Workflow Handbook 1997. New York: John Wiley and Sons; 1997.)."""@en ;
 
 provig:workflowManagementSystem a skos:Concept ;
   skos:prefLabel "workflow management system"@en ;
+  skos:editorialNote wiki:workflowManagementSystem ;
   skos:inScheme provig:dataConcepts ;
   skos:label "WFMS"@en ;
   skos:related provig:workflow ;
@@ -119,6 +126,7 @@ editor. Workflow Handbook 1997. New York: John Wiley and Sons; 1997.)."""@en ;
 
 provig:scientificWorkflow a skos:Concept ;
   skos:prefLabel "scientific workflow"@en ;
+  skos:editorialNote wiki:scientificWorkflow ;
   skos:inScheme provig:dataConcepts ;
   skos:broader provig:workflow ;
   skos:related provig:eScienceProvenance ;
@@ -138,6 +146,7 @@ p. 746-753. (Lecture Notes in Computer Science; vol. 4967).)"""@en ;
 
 provig:experimentalProvenance a skos:Concept ;
    skos:prefLabel "experimental provenance"@en ;
+   skos:editorialNote wiki:experimentalProvenance ;
    skos:inScheme provig:dataConcepts ;
    skos:broader provig:provenance ;
    skos:narrower provig:eScienceProvenance ;
@@ -158,6 +167,7 @@ Notes in Computer Science; vol. 3298).)"""@en ;
 
 provig:eScienceProvenance a skos:Concept ;
    skos:prefLabel "e-science provenance"@en ;
+   skos:editorialNote wiki:eScienceProvenance ;
    skos:inScheme provig:dataConcepts ;
    skos:broader provig:experimentalProvenance ;
    skos:related provig:scientificWorkflow ;
