@@ -54,6 +54,9 @@ def graph2md(mygraph):
            for buri in mygraph.objects(concept,prop):
                mylist += md('uitem') + mlink(buri,buri) + '\n'
            docstring += mylist + '\n'
+
+    docstring += md('Header3') + 'Annotations\n\n'
+    docstring += md('uitem') + '\n'   
     
   return(docstring)
 
